@@ -5,7 +5,7 @@ describe 'Refresher' do
   context "guess the collection" do
 
     it "Yes, it is a Object, but which class" do
-      expect([].is_a? _fill_in_object_).to be true
+      expect([].is_a? Array).to be true
       expect(Array.new.instance_of? _FILL_ME_IN_).to be true
     end
 
@@ -54,16 +54,16 @@ describe 'Refresher' do
   context "the following are Hash methods" do
     it "adds a key and value to a Hash" do
       a_hash = {}
-      fail "remove this entire line, implement your solution here" 
-      expect(a_hash.empty?).to be false 
+      fail "remove this entire line, implement your solution here"
+      expect(a_hash.empty?).to be false
     end
 
     it "returns a value from the hash for the given key" do
       a_hash = {magic: :johnson, shirley: :temple, "babe" => "ruth"}
 
-      expect(a_hash.fetch(:magic)).to eq _fill_in_sym_or_str 
-      expect(a_hash[:shirley]).to eq _fill_in_sym_or_str 
-      expect(a_hash["babe"]).to eq _fill_in_sym_or_str 
+      expect(a_hash.fetch(:magic)).to eq _fill_in_sym_or_str
+      expect(a_hash[:shirley]).to eq _fill_in_sym_or_str
+      expect(a_hash["babe"]).to eq _fill_in_sym_or_str
     end
 
     it "removes a key value pair from a hash" do
